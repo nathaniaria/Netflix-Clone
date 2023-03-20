@@ -27,7 +27,7 @@ function Header() {
 
 
   return (
-    <header className={`${isScrolled && 'bg-[#14141]'}`}>
+    <header className={`${isScrolled && 'bg-black'}`}>
         <div className="flex items-center space-x-2 md:space-x-10">
           <img
             src="https://rb.gy/ulxxee"
