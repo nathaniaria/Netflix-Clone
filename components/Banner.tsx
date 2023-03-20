@@ -29,6 +29,7 @@ function Banner({ netflixOriginals }: Props) {
         <Image
           src={`${baseUrl}${movie?.backdrop_path || movie?.poster_path}`}
           fill
+          alt="backdrop img"
           style={{ objectFit: "cover" }}
         />
       </div>
