@@ -33,7 +33,7 @@ function Header() {
           className="cursor-pointer object-contain"
         />
 
-        <ul className="hidden sm:inline space-x-4 md:flex">
+        <ul className=" sm:inline space-x-4 md:flex">
           <li className="headerLink cursor-default font-semibold text-white hover:text-white">
             Home
           </li>
@@ -44,8 +44,8 @@ function Header() {
         </ul>
       </div>
       <div className="flex items-center space-x-4 text-sm font-light">
-        <SearchIcon className="hidden sm:inline h-6 w-6 " />
-        <p className="hidden sm:inline lg:inline-block">Kids</p>
+        <SearchIcon className=" sm:inline h-6 w-6 " />
+        <p className="sm:inline lg:inline-block">Kids</p>
         <BellIcon className="h-6 w-6" />
         <Link href="/account">
           <img
