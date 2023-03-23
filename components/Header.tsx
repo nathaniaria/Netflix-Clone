@@ -43,10 +43,10 @@ function Header() {
           <li className="headerLink">My List</li>
         </ul>
       </div>
-      <div className="flex items-center space-x-4 text-sm font-light">
-        <SearchIcon className=" sm:inline h-6 w-6 " />
-        <p className="sm:inline lg:inline-block">Kids</p>
-        <BellIcon className="h-6 w-6" />
+      <div className=" flex items-center space-x-4 text-sm font-light">
+        <SearchIcon className="headerLink sm:inline h-6 w-6 " />
+        <p className="headerLink sm:inline lg:inline-block">Kids</p>
+        <BellIcon className="headerLink h-6 w-6" />
         <Link href="/account">
           <img
             src="https://rb.gy/g1pwyx"
