@@ -33,7 +33,7 @@ function Header() {
           className="cursor-pointer object-contain"
         />
 
-        <ul className=" sm:inline space-x-4 md:flex">
+        <ul className="hidden sm:inline space-x-4 md:flex">
           <li className="headerLink cursor-default font-semibold text-white hover:text-white">
             Home
           </li>
