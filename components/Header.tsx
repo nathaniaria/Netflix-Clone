@@ -50,7 +50,7 @@ function Header() {
         <SearchIcon className="headerLink sm:inline h-6 w-6 " />
         <p className="headerLink sm:inline lg:inline-block">Kids</p>
         <BellIcon className="headerLink h-6 w-6" />
-        <Link href="/account" onClick={logout}>
+        <Link href="/account" >
           <img
             src="https://rb.gy/g1pwyx"
             alt=""
