@@ -1,14 +1,12 @@
 import Image from 'next/image'
 import { BellIcon, SearchIcon } from '@heroicons/react/solid'
+import useAuth from '../hooks/useAuth'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import useAuth from '../hooks/useAuth'
-
+import BasicMenu from './BasicMenu'
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
-  const { logout } = useAuth()
-
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,7 +34,9 @@ function Header() {
           className="cursor-pointer object-contain"
         />
 
-        <ul className="hidden sm:inline space-x-4 md:flex">
+        <BasicMenu />
+
+        <ul className="hidden space-x-4 md:flex">
           <li className="headerLink cursor-default font-semibold text-white hover:text-white">
             Home
           </li>
@@ -46,11 +46,11 @@ function Header() {
           <li className="headerLink">My List</li>
         </ul>
       </div>
-      <div className=" flex items-center space-x-4 text-sm font-light">
-        <SearchIcon className="headerLink sm:inline h-6 w-6 " />
-        <p className="headerLink sm:inline lg:inline-block">Kids</p>
-        <BellIcon className="headerLink h-6 w-6" />
-        <Link href="/account" >
+      <div className="flex items-center space-x-4 text-sm font-light">
+        <SearchIcon className="sm hidden h-6 w-6 sm:inline" />
+        <p className="hidden lg:inline">Kids</p>
+        <BellIcon className="h-6 w-6" />
+        <Link href="/account">
           <img
             src="https://rb.gy/g1pwyx"
             alt=""
@@ -63,5 +63,3 @@ function Header() {
 }
 
 export default Header
-
-
