@@ -17,6 +17,20 @@
     @apply cursor-pointer text-sm font-light text-[#e5e5e5] transition duration-[.4s] hover:text-[#b3b3b3];
   }
 
+
+  /* had to do some class styling due to not being displayed properly on breakpoints*/
+  .headerLinks {
+    @apply hidden space-x-4 md:flex
+  }
+
+  .searchNav {
+    @apply hidden h-6 w-6 sm:inline
+  }
+
+  .kidsNav {
+    @apply hidden lg:inline
+  }
+
   .input {
     @apply w-full rounded bg-[#333333] px-5 py-3.5 placeholder-[gray] outline-none focus:bg-[#454545];
   }
